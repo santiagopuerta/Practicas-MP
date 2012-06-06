@@ -7,6 +7,10 @@ using namespace std;
 
 
 int main(int argc, char *argv[]){
+	if(argc < 2){
+		cout << "Error, no se han añadido suficientes argumentos." << endl;
+		return 1;
+	}
 	int contador = 0; // Cuenta el numero de veces que se repite el caracter introducido.
 	char c;
 	while(cin.get(c)){
